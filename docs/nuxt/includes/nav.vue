@@ -1,24 +1,24 @@
 <template>
-    <b-navbar toggleable class="main-nav pl-5 pr-5" type="inverse">
-    
+    <b-navbar toggleable class="main-nav" type="inverse" fixed="left">
+
         <b-nav-toggle target="bd-main-nav"></b-nav-toggle>
-    
+
         <b-link class="navbar-brand nuxt-link-active" to="/" exact>
             <img src="~static/icon.png" alt="BV">
             <span>BootstrapVue</span>
         </b-link>
-    
+
         <b-collapse isNav class="justify-content-between" id="bd-main-nav">
-    
+
             <b-nav isNavBar>
                 <b-nav-item to="/docs">Documentation</b-nav-item>
-    
+
                 <b-nav-item to="/play">
                     <span>Playground</span>
                 </b-nav-item>
-    
+
             </b-nav>
-    
+
             <b-nav isNavBar>
                 <div class="nav-item nav-link">
                     <iframe src="https://ghbtns.com/github-btn.html?user=bootstrap-vue&repo=bootstrap-vue&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px">
@@ -27,9 +27,9 @@
                     </iframe>
                 </div>
             </b-nav>
-    
+
         </b-collapse>
-    
+
     </b-navbar>
 </template>
 

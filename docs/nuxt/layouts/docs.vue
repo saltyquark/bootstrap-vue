@@ -1,8 +1,8 @@
 <template>
     <div>
         <m-nav></m-nav>
-    
-        <div class="container mt-5">
+        <div class="main">
+        <div class="container-fluid mt-5">
             <div class="row">
                 <div class="col-12 col-md-9 bd-content">
                     <div class="float-right">
@@ -10,24 +10,23 @@
                             <img src="https://img.shields.io/github/release/bootstrap-vue/bootstrap-vue.svg?style=flat-square" alt="GitHub release">
                         </a>
                     </div>
-    
+
                     <b-button-group class="mb-2">
                         <b-btn size="sm" :href="issueURL" target="_blank">Report an issue</b-btn>
                         <b-btn size="sm" :href="editPageURL" target="_blank">Edit this page</b-btn>
                     </b-button-group>
                     <br>
-    
+
                     <nuxt/>
                 </div>
-    
+
                 <div class="col-12 col-md-3 bd-sidebar">
                     <m-sidebar></m-sidebar>
                 </div>
             </div>
         </div>
-    
-        <m-footer></m-footer>
-    
+      </div>
+
     </div>
 </template>
 

@@ -1,8 +1,10 @@
 <template>
     <div class="bd-home">
         <m-nav></m-nav>
-
-        <nuxt/>
+        
+        <div class="main">
+          <nuxt/>
+        </div>
 
         <m-footer></m-footer>
     </div>

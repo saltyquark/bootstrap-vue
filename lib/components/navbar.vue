@@ -61,13 +61,13 @@
 <style>
 .fixed-right.navbar,
 .fixed-left.navbar {
+z-index: 999;
   width: 260px;
   position: fixed;
   border-radius: 0;
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 11;
 }
 .fixed-right.navbar {
   right: 0;
@@ -81,19 +81,17 @@
   display: block;
 }
 @media (min-width: 576px) {
-  .fixed-right.navbar.navbar-toggleable .navbar-collapse.
+  .fixed-right.navbar.navbar-toggleable .navbar-collapse,
   .fixed-left.navbar.navbar-toggleable .navbar-collapse {
     display: block !important;
   }
 }
-.fixed-right.navbar .navbar-nav {
-  margin: 0 -8px;
-}
+.fixed-right.navbar .navbar-nav,
 .fixed-left.navbar .navbar-nav {
   margin: 0 -8px;
 }
-.fixed-left + .container {
-  padding-left: 160px;
+.fixed-left + .main {
+  margin-left: 260px;
 }
 .fixed-right .navbar-nav > li > .dropdown-menu,
 .fixed-left .navbar-nav > li > .dropdown-menu {
